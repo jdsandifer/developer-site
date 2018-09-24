@@ -49,7 +49,7 @@ class Gallery extends Component {
         });
     }
     handleClickImage () {
-        window.open(this.state.currentLink)
+        window.location = this.state.currentLink
     }
     renderGallery () {
         const { images } = this.props;
