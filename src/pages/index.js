@@ -26,7 +26,7 @@ const PROJECT_IMAGES = [
         src: full01, 
         thumbnail: thumb01, 
         caption: 'My Website & Blog', 
-        description: 'I used GatsbyJS v2 to quickly re-design my site in a day.', 
+        description: 'I used GatsbyJS to quickly re-design my site in a day.', 
         explanation: 'I spun this website up in about a day and finished adding content and my first blog post by the second day. It was very satisfying to see how much faster I could create a polished site by incorporating existing solutions and customizing them rather than trying to build from scratch (like I did with my first portfolio site.', 
         link: 'https://github.com/jdsandifer/developer-site'
     },
@@ -57,6 +57,7 @@ const PROJECT_IMAGES = [
         explanation: 'I helped on this project across the entire stack: some backend, some frontend, and lots of little bug fixes and optimizations. I also helped port the front end to Mac for better usability for all presenters.', 
         link: 'https://github.com/jdsandifer/PresentationFileServer'
     },
+    /*
     { 
         id: '5', 
         src: full05, 
@@ -64,8 +65,8 @@ const PROJECT_IMAGES = [
         caption: 'My Blog', 
         description: 'Read my thoughts on software development! (and other stuff, too)', 
         explanation: "I'll use my blog to share my thoughts about software development in more depth than will comfortably fit in a tweet. I plan to post about frameworks I like and why, things I've learned recently, and other thoughts I think are worth sharing. I'll probably digress with a few posts aobut other areas of my life, too - Parkour, theatre (my first career), LEGO, and more.", 
-        link: './hello-world/'
-    },
+        link: './blog/'
+    },*/
     { 
         id: '6', 
         src: full06, 

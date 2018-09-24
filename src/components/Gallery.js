@@ -49,7 +49,9 @@ class Gallery extends Component {
         });
     }
     handleClickImage () {
-        window.location = this.state.currentLink
+        if (typeof window !== 'undefined') {
+            window.location = this.state.currentLink
+        }
     }
     renderGallery () {
         const { images } = this.props;

@@ -1,5 +1,5 @@
 # My Portfolio Site & Blog
-I used GatsbyJS v2 and a free starter template from HTML5 UP to completely redesign my site and update it in about a day.
+I used GatsbyJS and a free starter template from HTML5 UP setup for Gatsby by Hunter Chang (ChangoMan) to completely redesign my site and update it in about a day.
 
 This was a big win for me because I had been putting off this redesign and how long it would take. (My first portfolio site was built from scratch and took several days.)
 
@@ -11,7 +11,7 @@ Coming soon! Still working out my hosting solution - hopefully, with auto reload
 
 ## Stuff I Used
 
-Site: GatsbyJS v2 with React, HTML5, Sass, GraphQL, and Font Awesome
+Site: GatsbyJS with React, HTML5, Sass, GraphQL, and Font Awesome
 Design: Strata Gatsby starter by HTML5 UP.
 Free Images: PEXELS.com
 Photo of me: Sarah J. Sandifer
