@@ -1,13 +1,18 @@
-# gatsby-starter-strata
-Gatsby starter based on the Strata site template, designed by [HTML5 UP](https://html5up.net/strata). Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
+# My Portfolio Site & Blog
+I used GatsbyJS v2 and a free starter template from HTML5 UP to completely redesign my site and update it in about a day.
 
-## Preview
+This was a big win for me because I had been putting off this redesign and how long it would take. (My first portfolio site was built from scratch and took several days.)
 
-http://gatsby-strata.surge.sh/
+Once I had decided to use some kind of existing framework to help me with the site and the picked one, the process went very smoothly! I surprised myself by how much I've learned since I built my first site and by how much Gatsby takes care of in the process.
 
-## Installation
+## See It Live
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-starter-strata https://github.com/ChangoMan/gatsby-starter-strata`
+Coming soon! Still working out my hosting solution - hopefully, with auto reload when I push to GitHub.
 
-Run `gatsby develop` in the terminal to start.
+## Stuff I Used
+
+Site: GatsbyJS v2 with React, HTML5, Sass, GraphQL, and Font Awesome
+Design: Strata Gatsby starter by HTML5 UP.
+Free Images: PEXELS.com
+Photo of me: Sarah J. Sandifer
+Theatre Photo: J.D. Sandifer
