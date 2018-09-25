@@ -201,10 +201,11 @@ class HomeIndex extends React.Component {
                             question about a tricky programming issue, feel free to contact me.
                         </p>
                         <p>
-                            You may use any of the methods listed below, although I recommend email - via the link or the form - for all messages except 
+                            You may use any of the methods listed below, although I recommend email for all messages except 
                             pressing issues. Text my phone for anything that you need me to respond to in less than one business day. (Text is best as I'm not always able to answer my phone.)
                         </p>
                         <div className="row">
+                        {/*
                             <div className="8u 12u$(small)">
                                 <form method="post" action="mailto:sandifer.jd@gmail.com" encType="text/plain">
                                     <div className="row uniform 50%">
@@ -216,7 +217,7 @@ class HomeIndex extends React.Component {
                                 <ul className="actions">
                                     <li><input type="submit" value="Send Email" /></li>
                                 </ul>
-                            </div>
+                            </div>*/}
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
                                     <li>
@@ -232,7 +233,7 @@ class HomeIndex extends React.Component {
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">sandifer.jd@gmail.com</a>
+                                        <a href="mailto:sandifer.jd@gmail.com">sandifer.jd@gmail.com</a>
                                     </li>
                                 </ul>
                             </div>
