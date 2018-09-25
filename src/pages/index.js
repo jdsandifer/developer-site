@@ -197,7 +197,7 @@ class HomeIndex extends React.Component {
                         <h2>Get In Touch</h2>
                         <p>
                             Whether it's to discuss a new position, ask me what 
-                            Portland area meetups I recomment, or even ask me a 
+                            Portland area meetups I recommend, or even ask me a 
                             question about a tricky programming issue, feel free to contact me.
                         </p>
                         <p>
