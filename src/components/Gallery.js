@@ -31,26 +31,32 @@ class Gallery extends Component {
         this.setState({
             currentImage: 0,
             lightboxIsOpen: false,
+            currentLink: null
         });
     }
     gotoPrevious () {
+        const newIndex = this.state.currentImage - 1
         this.setState({
-            currentImage: this.state.currentImage - 1,
+            currentImage: newIndex,
+            currentLink: this.props.images[newIndex].link
         });
     }
     gotoNext () {
+        const newIndex = this.state.currentImage + 1
         this.setState({
-            currentImage: this.state.currentImage + 1,
+            currentImage: newIndex,
+            currentLink: this.props.images[newIndex].link
         });
     }
     gotoImage (index) {
         this.setState({
             currentImage: index,
+            currentLink: this.props.images[index].link
         });
     }
     handleClickImage () {
         if (typeof window !== 'undefined') {
-            window.location = this.state.currentLink
+            window.open(this.state.currentLink)
         }
     }
     renderGallery () {

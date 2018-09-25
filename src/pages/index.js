@@ -72,9 +72,9 @@ const PROJECT_IMAGES = [
         src: full06, 
         thumbnail: thumb06, 
         caption: 'My First Career - Lighting Design', 
-        description: 'I worked for 8 years as a professional lighting designer in Portland, OR.', 
+        description: 'I worked for 7 years as a professional lighting designer in Portland, OR.', 
         explanation: "Click or tap on the image to see more photos of my work!", 
-        link: 'http://www.jdsandifer.com/lighting-designer/index.html'
+        link: 'https://jdsandifer.github.io/lighting-design/'
     }
 ];
 
