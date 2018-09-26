@@ -3,4 +3,5 @@
 /blog/*   https://jdsandifer.github.io/blog/:splat   200
 
 # Show lighting design site at /lighting-designer/
+/lighting-designer    https://jdsandifer.github.io/lighting-design/          200
 /lighting-designer/*  https://jdsandifer.github.io/lighting-design/:splat    200
