@@ -74,7 +74,7 @@ const PROJECT_IMAGES = [
         caption: 'My First Career - Lighting Design', 
         description: 'I worked for 7 years as a professional lighting designer in Portland, OR.', 
         explanation: "Click or tap on the image to see more photos of my work!", 
-        link: 'https://jdsandifer.github.io/lighting-design/'
+        link: 'https://www.jdsandifer.com/lighting-designer/index.html'
     }
 ];
 
