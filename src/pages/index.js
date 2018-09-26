@@ -202,7 +202,8 @@ class HomeIndex extends React.Component {
                         </p>
                         <p>
                             You may use any of the methods listed below, although I recommend email for all messages except 
-                            pressing issues. Text my phone for anything that you need me to respond to in less than one business day. (Text is best as I'm not always able to answer my phone.)
+                            pressing issues. Text me if you need a response in less than one business day. (Text because I'm not 
+                            always able to answer my phone, but you can try that, too.)
                         </p>
                         <div className="row">
                         {/*
