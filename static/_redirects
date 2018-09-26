@@ -1,7 +1,7 @@
 # Show blog at /blog/
-#/blog     https://jdsandifer.github.io/blog/         200
-#/blog/*   https://jdsandifer.github.io/blog/:splat   200
+#/blog      https://jdsandifer.github.io/blog/            200
+#/blog/*    https://jdsandifer.github.io/blog/:splat      200
 
 # Show lighting design site at /lighting-designer/
-/lighting-designer    https://jdsandifer.github.io/lighting-design/index.html   200
-/lighting-designer/*  https://jdsandifer.github.io/lighting-design/:splat       200
+/lighting-designer      /lighting-designer/index.html     301
+/lighting-designer/*    https://jdsandifer.github.io/lighting-design/:splat    200
