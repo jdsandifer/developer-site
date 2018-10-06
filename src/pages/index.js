@@ -143,30 +143,12 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>JavaScript and React Developer</h2>
+                            <h2>JavaScript, React, and PHP Developer</h2>
                         </header>
                         <p>
-                            I'm a <strong> problem solver </strong> who loves the 
-                            challenge of creating the most readable, testable, and 
-                            maintainable code possible.
+                            I love to remove obstacles - whether it's improving UI, optimizing the back-end, 
+                            or tweaking database calls. Wherever problems exist, I'm ready to solve them.
                         </p>
-                        <p>
-                            Improvement and <strong> efficiency </strong> top my 
-                            list of priorities 
-                            whether I'm sorting out a legacy code base, 
-                            architecting a new app, or testing existing software 
-                            to ensure quality.
-                        </p>
-                        <p>
-                            I have experience as an Android Developer with 
-                            <strong> published apps </strong> in the Google Play store, 
-                            and I do 
-                            full stack development using JavaScript-based 
-                            frameworks and libraries.
-                        </p>
-                        <p>
-                            I'm always looking for the next <strong> best practice </strong> 
-                            to add to my software development tool belt.</p>
                         {/*
                         <ul className="actions">
                             <li><a href="#" className="button">Learn More</a></li>
