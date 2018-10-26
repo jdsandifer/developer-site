@@ -13,7 +13,7 @@ class Header extends React.Component {
                         <strong> J.D. Sandifer </strong>
                     </h1>
                     <h2>
-                         A software developer based in Portland, Oregon.
+                         A Portland, Oregon software developer.
                     </h2>
                 </div>
                 <Footer />
