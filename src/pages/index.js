@@ -146,8 +146,8 @@ class HomeIndex extends React.Component {
                             <h2>JavaScript, React, and PHP Developer</h2>
                         </header>
                         <p>
-                            I love to remove obstacles - whether it's improving UI, optimizing the back-end, 
-                            or tweaking database calls. Wherever problems exist, I'm ready to solve them.
+                            I love to remove obstacles between people and technology. Whether it's improving UI, optimizing the back-end, 
+                            or tweaking database calls. Wherever problems exist, I want to dive in and solve them.
                         </p>
                         {/*
                         <ul className="actions">
