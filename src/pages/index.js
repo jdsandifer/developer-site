@@ -57,7 +57,6 @@ const PROJECT_IMAGES = [
         explanation: 'I helped on this project across the entire stack: some backend, some frontend, and lots of little bug fixes and optimizations. I also helped port the front end to Mac for better usability for all presenters.', 
         link: 'https://github.com/jdsandifer/PresentationFileServer'
     },
-    /*
     { 
         id: '5', 
         src: full05, 
@@ -66,7 +65,7 @@ const PROJECT_IMAGES = [
         description: 'Read my thoughts on software development! (and other stuff, too)', 
         explanation: "I'll use my blog to share my thoughts about software development in more depth than will comfortably fit in a tweet. I plan to post about frameworks I like and why, things I've learned recently, and other thoughts I think are worth sharing. I'll probably digress with a few posts aobut other areas of my life, too - Parkour, theatre (my first career), LEGO, and more.", 
         link: './blog/'
-    },*/
+    },
     { 
         id: '6', 
         src: full06, 
