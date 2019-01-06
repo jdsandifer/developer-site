@@ -146,7 +146,7 @@ class HomeIndex extends React.Component {
                         </header>
                         <p>
                             I love to remove obstacles between people and technology. Whether it's improving UI, optimizing the back-end, 
-                            or tweaking database calls. Wherever problems exist, I want to dive in and solve them.
+                            or tweaking database calls, wherever problems exist, I want to dive in and solve them.
                         </p>
                         {/*
                         <ul className="actions">
