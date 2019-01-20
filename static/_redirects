@@ -4,4 +4,4 @@
 
 # Show lighting design site at /lighting-designer/
 /lighting-designer      /lighting-designer/index.html     301
-/lighting-designer/*    https://jdsandifer.github.io/lighting-design/:splat    200
+/lighting-designer/*    https://jd-ld.netlify.com/:splat    200
