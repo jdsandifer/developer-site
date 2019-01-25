@@ -148,6 +148,10 @@ class HomeIndex extends React.Component {
                             I love to remove obstacles between people and technology. Whether it's improving the user interface, optimizing the back-end, 
                             or tweaking database calls - wherever problems exist, I want to dive in and solve them.
                         </p>
+                        <p>
+                            I also love collaboratiing with other people who are passionate about what they do. Teammates usually 
+                            describe me as calm, casual, and easy-going.
+                        </p>
                         {/*
                         <ul className="actions">
                             <li><a href="#" className="button">Learn More</a></li>
