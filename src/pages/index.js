@@ -21,58 +21,60 @@ import full05 from '../assets/images/fulls/ideas.jpg'
 import full06 from '../assets/images/fulls/lighting-design.jpg'
 
 const PROJECT_IMAGES = [
-    { 
-        id: '1', 
-        src: full01, 
-        thumbnail: thumb01, 
-        caption: 'My Website & Blog', 
-        description: 'I used GatsbyJS to quickly re-design my site in a day.', 
-        explanation: 'I spun this website up in about a day and finished adding content and my first blog post by the second day. It was very satisfying to see how much faster I could create a polished site by incorporating existing solutions and customizing them rather than trying to build from scratch (like I did with my first portfolio site.', 
-        link: 'https://github.com/jdsandifer/developer-site'
+    {
+        id: '1',
+        src: full01,
+        thumbnail: thumb01,
+        caption: 'My Website',
+        description: 'I used GatsbyJS to quickly re-design my site in a day.',
+        explanation: 'I spun this website up in about a day and finished adding content by the second day. It was very satisfying to see how much faster I could create a polished site by incorporating existing solutions and customizing them rather than trying to build from scratch (like I did with my first portfolio site.',
+        codeLink: 'https://github.com/jdsandifer/developer-site'
     },
-    { 
-        id: '2', 
-        src: full02, 
-        thumbnail: thumb02, 
-        caption: 'Random Quote API Site', 
-        description: 'Accesses the Quotes on Design Rest API and displays quotes with ES6, Sass, and HTML5.', 
-        explanation: 'See my code by clicking on the image.', 
-        link: 'https://github.com/jdsandifer/random-quote-machine'
+    {
+        id: '2',
+        src: full02,
+        thumbnail: thumb02,
+        caption: 'Random Quote API Site',
+        description: 'Accesses the Quotes on Design Rest API and displays quotes with ES6, Sass, and HTML5.',
+        explanation: '',
+        link: 'https://codepen.io/jdsandifer/full/pQMxGY',
+        codeLink: 'https://github.com/jdsandifer/random-quote-machine'
     },
-    { 
-        id: '3', 
-        src: full03, 
-        thumbnail: thumb03, 
-        caption: 'Event Paperwork App', 
-        description: 'A React app I helped implement at work', 
-        explanation: 'I directed a redesign of the app architecture to include ReactJS on the frontend and move to an API for the backend to reduce coupling and speed up page load.', 
-        link: 'https://github.com/jdsandifer/digital-paperwork'
+    {
+        id: '3',
+        src: full03,
+        thumbnail: thumb03,
+        caption: 'Event Paperwork App',
+        description: 'A React app I helped implement at work',
+        explanation: 'I directed a redesign of the app architecture to include ReactJS on the frontend and move to an API for the backend to reduce coupling and speed up page load.',
+        codeLink: 'https://github.com/jdsandifer/digital-paperwork'
     },
-    { 
-        id: '4', 
-        src: full04, 
-        thumbnail: thumb04, 
-        caption: 'Presentation File Server', 
-        description: 'Full stack work project using a LAMP stack and JS/CSS/HTML5 frontend', 
-        explanation: 'I helped on this project across the entire stack: some backend, some frontend, and lots of little bug fixes and optimizations. I also helped port the front end to Mac for better usability for all presenters.', 
-        link: 'https://github.com/jdsandifer/PresentationFileServer'
+    {
+        id: '4',
+        src: full04,
+        thumbnail: thumb04,
+        caption: 'Presentation File Server',
+        description: 'Full stack work project using a LAMP stack and JS/CSS/HTML5 frontend',
+        explanation: 'I helped on this project across the entire stack: some backend, some frontend, and lots of little bug fixes and optimizations. I also helped port the front end to Mac for better usability for all presenters.',
+        codeLink: 'https://github.com/jdsandifer/PresentationFileServer'
     },
-    { 
-        id: '5', 
-        src: full05, 
-        thumbnail: thumb05, 
-        caption: 'My Blog', 
-        description: 'Read my thoughts on software development! (and other stuff, too)', 
-        explanation: "I'll use my blog to share my thoughts about software development in more depth than will comfortably fit in a tweet. I plan to post about frameworks I like and why, things I've learned recently, and other thoughts I think are worth sharing. I'll probably digress with a few posts aobut other areas of my life, too - Parkour, theatre (my first career), LEGO, and more.", 
-        link: './blog/'
+    {
+        id: '5',
+        src: full05,
+        thumbnail: thumb05,
+        caption: 'My Blog',
+        description: 'Read my thoughts on software development! (and other stuff, too)',
+        explanation: "I'll use my blog to share my thoughts about software development in more depth than will comfortably fit in a tweet. I plan to post about frameworks I like and why, things I've learned recently, and other thoughts I think are worth sharing. I'll probably digress with a few posts aobut other areas of my life, too - parkour, theatre (my first career), LEGO, and more.",
+        link: 'https://www.jdsandifer.com/blog',
+        codeLink: 'https://github.com/jdsandifer/blog'
     },
-    { 
-        id: '6', 
-        src: full06, 
-        thumbnail: thumb06, 
-        caption: 'My First Career - Lighting Design', 
-        description: 'I worked for 7 years as a professional lighting designer in Portland, OR.', 
-        explanation: "Click or tap on the image to see more photos of my work!", 
+    {
+        id: '6',
+        src: full06,
+        thumbnail: thumb06,
+        caption: 'My First Career - Lighting Design',
+        description: 'I worked for 7 years as a professional lighting designer in Portland, OR.',
+        explanation: "Select the image to see more photos of my lighting design work!",
         link: 'https://www.jdsandifer.com/lighting-designer/index.html'
     }
 ];
@@ -94,7 +96,7 @@ class HomeIndex extends React.Component {
         this.handleClickImage = this.handleClickImage.bind(this);
     }
 
-    openLightbox (index, event) {
+    openLightbox(index, event) {
         event.preventDefault();
         this.setState({
             currentImage: index,
@@ -102,26 +104,26 @@ class HomeIndex extends React.Component {
         });
     }
 
-    closeLightbox () {
+    closeLightbox() {
         this.setState({
             currentImage: 0,
             lightboxIsOpen: false,
         });
     }
 
-    gotoPrevious () {
+    gotoPrevious() {
         this.setState({
             currentImage: this.state.currentImage - 1,
         });
     }
 
-    gotoNext () {
+    gotoNext() {
         this.setState({
             currentImage: this.state.currentImage + 1,
         });
     }
 
-    handleClickImage () {
+    handleClickImage() {
         if (this.state.currentImage === this.props.images.length - 1) return;
 
         this.gotoNext();
@@ -134,8 +136,8 @@ class HomeIndex extends React.Component {
         return (
             <div>
                 <Helmet>
-                        <title>{siteTitle}</title>
-                        <meta name="description" content={siteDescription} />
+                    <title>{siteTitle}</title>
+                    <meta name="description" content={siteDescription} />
                 </Helmet>
 
                 <div id="main">
@@ -145,11 +147,11 @@ class HomeIndex extends React.Component {
                             <h2>Software Developer</h2>
                         </header>
                         <p>
-                            I love to remove obstacles between people and technology. Whether it's improving the user interface, optimizing the back-end, 
+                            I love to remove obstacles between people and technology. Whether it's improving the user interface, optimizing the back-end,
                             or tweaking database calls - wherever problems exist, I want to dive in and solve them.
                         </p>
                         <p>
-                            I also love collaborating with other people who are passionate about what they do. Teammates usually 
+                            I also love collaborating with other people who are passionate about what they do. Teammates usually
                             describe me as calm, casual, and easy-going.
                         </p>
                         {/*
@@ -162,13 +164,14 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Selected Work</h2>
 
-                        <Gallery images={PROJECT_IMAGES.map(({ id, src, thumbnail, caption, description, explanation, link }) => ({
+                        <Gallery images={PROJECT_IMAGES.map(({ id, src, thumbnail, caption, description, explanation, link, codeLink }) => ({
                             src,
                             thumbnail,
                             caption,
                             description,
                             explanation,
-                            link
+                            link,
+                            codeLink
                         }))} />
 
                         {/*}
@@ -181,17 +184,17 @@ class HomeIndex extends React.Component {
                     <section id="three">
                         <h2>Get In Touch</h2>
                         <p>
-                            Whether it's to discuss a new position, ask me what 
-                            Portland area meetups I recommend, or even ask me a 
+                            Whether it's to discuss a new position, ask me what
+                            Portland area meetups I recommend, or even ask me a
                             question about a tricky programming issue, feel free to contact me.
                         </p>
                         <p>
-                            You may use any of the methods listed below, although I recommend email for all messages except 
-                            pressing issues. Text me if you need a response in less than one business day. (Text because I'm not 
+                            You may use any of the methods listed below, although I recommend email for all messages except
+                            pressing issues. Text me if you need a response in less than one business day. (Text because I'm not
                             always able to answer my phone, but you can try that, too.)
                         </p>
                         <div className="row">
-                        {/*
+                            {/*
                             <div className="8u 12u$(small)">
                                 <form method="post" action="mailto:sandifer.jd@gmail.com" encType="text/plain">
                                     <div className="row uniform 50%">

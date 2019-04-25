@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Lightbox from 'react-images';
+import ProjectLinks from './ProjectLinks.js';
 
 class Gallery extends Component {
-    constructor () {
+    constructor() {
         super();
 
         this.state = {
             lightboxIsOpen: false,
             currentImage: 0,
-            currentLink: null
+            currentLink: null,
+            currentCodeLink: null
         };
 
         this.closeLightbox = this.closeLightbox.bind(this);
@@ -18,48 +20,55 @@ class Gallery extends Component {
         this.gotoImage = this.gotoImage.bind(this);
         this.handleClickImage = this.handleClickImage.bind(this);
         this.openLightbox = this.openLightbox.bind(this);
+        this.renderProjectLinks = this.renderProjectLinks.bind(this);
     }
-    openLightbox (index, event, link) {
+    openLightbox(index, event, link, codeLink) {
         event.preventDefault();
         this.setState({
             currentImage: index,
             lightboxIsOpen: true,
-            currentLink: link
+            currentLink: link,
+            currentCodeLink: codeLink
         });
     }
-    closeLightbox () {
+    closeLightbox() {
         this.setState({
             currentImage: 0,
             lightboxIsOpen: false,
-            currentLink: null
+            currentLink: null,
+            currentCodeLink: null
         });
     }
-    gotoPrevious () {
+    gotoPrevious() {
         const newIndex = this.state.currentImage - 1
         this.setState({
             currentImage: newIndex,
-            currentLink: this.props.images[newIndex].link
+            currentLink: this.props.images[newIndex].link,
+            currentCodeLink: this.props.images[newIndex].codeLink
         });
     }
-    gotoNext () {
+    gotoNext() {
         const newIndex = this.state.currentImage + 1
         this.setState({
             currentImage: newIndex,
-            currentLink: this.props.images[newIndex].link
+            currentLink: this.props.images[newIndex].link,
+            currentCodeLink: this.props.images[newIndex].codeLink
         });
     }
-    gotoImage (index) {
+    gotoImage(index) {
         this.setState({
             currentImage: index,
-            currentLink: this.props.images[index].link
+            currentLink: this.props.images[index].link,
+            currentCodeLink: this.props.images[index].codeLink
         });
     }
-    handleClickImage () {
+    handleClickImage() {
+        const bestLink = this.state.currentCodeLink || this.state.currentLink
         if (typeof window !== 'undefined') {
-            window.open(this.state.currentLink)
+            window.open(bestLink)
         }
     }
-    renderGallery () {
+    renderGallery() {
         const { images } = this.props;
 
         if (!images) return;
@@ -70,7 +79,7 @@ class Gallery extends Component {
                     <a
                         className="image fit thumb"
                         href={obj.src}
-                        onClick={(e) => this.openLightbox(i, e, obj.link)}
+                        onClick={(e) => this.openLightbox(i, e, obj.link, obj.codeLink)}
                     >
                         <img src={obj.thumbnail} />
                     </a>
@@ -87,12 +96,16 @@ class Gallery extends Component {
             </div>
         );
     }
-    render () {
+    renderProjectLinks() {
+        return <ProjectLinks key={1} demoLink={this.state.currentLink} codeLink={this.state.currentCodeLink} />
+    }
+    render() {
         return (
             <div>
                 {this.renderGallery()}
                 <Lightbox
                     currentImage={this.state.currentImage}
+                    customControls={[this.renderProjectLinks()]}
                     images={this.props.images}
                     isOpen={this.state.lightboxIsOpen}
                     onClickImage={this.handleClickImage}
