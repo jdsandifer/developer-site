@@ -63,7 +63,7 @@ class Gallery extends Component {
         });
     }
     handleClickImage() {
-        const bestLink = this.state.currentCodeLink || this.state.currentLink
+        const bestLink = this.state.currentLink || this.state.currentCodeLink
         if (typeof window !== 'undefined') {
             window.open(bestLink)
         }
